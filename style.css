@@ -336,7 +336,7 @@ footer {
 .container-home1 {
     display: flex;
     justify-content: space-around;
-    /*overflow: hidden;*/
+    padding: 60px;
 }
 
 .column-home1 {
@@ -361,14 +361,15 @@ footer {
     margin-left: 150px;
     margin-top: 50px;
     font-size: 20px;
-    
 }
 
 .main-home p {
     font-family: 'Trispace', sans-serif;
-    color: #ffffff;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
     padding: 15px;
-    background-color: #4C1E0E;
+    font-weight: bold;
     border-radius: 15px;
 }
 
@@ -392,18 +393,6 @@ footer {
 .column-gallery {
     flex: 25%;
     padding: 40px;
-    
-}
-
-.titulo-gallery {
-    display: flex;
-    justify-content: center;
-}
-
-.titulo-gallery h3 {
-    font-family: 'League Gothic', sans-serif;
-    font-weight: lighter;
-    font-size: 80px;
 }
 
 /*SECCIÓN "NOSOTROS" */
