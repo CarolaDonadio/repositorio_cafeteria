@@ -1,0 +1,130 @@
+/*PIE DE PÁGINA*/
+$colores: (
+    color1: #202020,
+    color2: #3a3635,
+    color3: #424140,
+    color4: #161616
+);
+
+footer {
+    background-color: map-get($colores, color1);
+    color: #c7c7c7;
+    width: 100%;
+    margin-top: 35px;
+
+    animation: BGcolorChanging-4colors 6s linear infinite alternate both;
+    
+    @keyframes BGcolorChanging-4colors {
+        0% {
+            background: map-get($colores, color1);
+        }
+        33.3333% {
+            background: map-get($colores, color2);
+        }
+        66.666% {
+            background: map-get($colores, color3);
+        }
+        100% {
+            background: map-get($colores, color4);
+        }
+    }
+
+    .container-footer-all {
+        /*width: 100vw;*/
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px;
+
+        .container-footer1 {
+            display: flex;
+            justify-content: space-evenly;
+            font-family: sans-serif;
+
+            .column1 {
+                max-width: 600px;
+
+                .column1 .row {
+                    margin-top: 20px;
+                    display: flex;
+                }
+
+                .row1-img {
+                    width: 25px;
+                    height: 25px;
+                    color: #c7c7c7;
+                }
+                
+                .row1-label {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                }  
+            }
+
+            .column3 {
+                @extend .column1;
+
+                .row3 {
+                    margin-top: 20px;
+                    display: flex; 
+                }
+
+                .row3 img {
+                    @extend .row1-img;
+                    /*width: 25px;
+                    height: 25px;*/
+                }
+                    
+                .row3 label {
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    max-width: 140px;
+                    font-size: 14px;
+                }
+            }
+
+            .titulo-footer {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .container-footer2 {
+        width: 100%;
+        background-color: #101010;
+        color: #c7c7c7;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        
+        animation: BGcolorChanging-footer2 6s linear infinite alternate both;
+
+        @keyframes BGcolorChanging-footer2 {
+            0% {
+                background: #101010;
+            }
+            33.3333% {
+                background: #272424;
+            }
+            66.666% {
+                background: #363433;
+            }
+            100% {
+                background: #0e0d0d;
+            }
+        }
+
+        @mixin footer-footer2 {
+            max-width: 1200px;
+            margin: auto;
+            padding-top: 15px;
+            padding-right: 10px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+        }
+
+        .container-footer-footer2 {
+            @include footer-footer2;
+        }
+    }
+}

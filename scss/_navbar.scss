@@ -1,0 +1,92 @@
+$color-menu-link: #4C1E0E;
+$font-menu-link: Arial, Helvetica, sans-serif;
+$color-menu-link1: #E5DFDD;
+$menu-link-hover: #9e604b;
+$menu-link1-hover: #b3b3b3;
+
+
+/*BARRA DE NAVEGACIÓN*/
+.header1 {
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menu-link {
+    color: $color-menu-link;
+    text-decoration: none;
+    font-family: $font-menu-link;
+    font-weight: bold;  
+}
+
+.menu-link:hover {
+    color: $menu-link-hover;
+    padding: 10px;
+    background-color: #dde5df94;
+    border-radius: 10%;
+}
+
+.menu-link1 {
+    color: $color-menu-link1;
+    text-decoration: none;
+    font-family: $font-menu-link;
+    font-weight: bold;  
+}
+
+.menu-link1:hover {
+    color: $menu-link1-hover;
+    padding: 10px;
+    background-color: #00000031;
+    border-radius: 10%;
+}
+
+.menu-item {
+    font-size: 15px;
+    margin: 0 10px;
+    line-height: 80px;
+}
+
+.menu-item:active {
+    transform: scale(0.98);
+    transition: all .0.5s;
+}
+
+.logo {
+    width: 180px;
+    padding: 6px 40px;
+    line-height: 80px;
+}
+.logo:active {
+    transform: scale(0.98);
+    transition: all .2s;
+}
+.nav-menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.fi {
+    color: $color-menu-link;
+    margin-right: 3px;
+}
+
+.fi:hover {
+    color: $menu-link-hover;
+}
+
+.fi1 {
+    color: $color-menu-link1;
+    margin-right: 3px;
+}
+
+.fi1:hover {
+    color: $menu-link1-hover;
+}

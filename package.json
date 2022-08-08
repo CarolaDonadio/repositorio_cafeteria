@@ -1,0 +1,33 @@
+{
+  "name": "coffe_cafeteria",
+  "version": "1.0.0",
+  "description": "Sitio web de cafetería \"COFFE\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolaDonadio/repositorio_cafeteria.git"
+  },
+  "keywords": [
+    "cafetería",
+    "café",
+    "chascomús",
+    "cafetería",
+    "más",
+    "cercana"
+  ],
+  "author": "Carola Donadío",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolaDonadio/repositorio_cafeteria/issues"
+  },
+  "homepage": "https://github.com/CarolaDonadio/repositorio_cafeteria#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
