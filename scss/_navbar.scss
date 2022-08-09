@@ -27,7 +27,7 @@ $menu-link1-hover: #b3b3b3;
 }
 
 .menu-link:hover {
-    color: $menu-link-hover;
+    color: $color-menu-link;
     padding: 10px;
     background-color: #dde5df94;
     border-radius: 10%;
@@ -41,7 +41,7 @@ $menu-link1-hover: #b3b3b3;
 }
 
 .menu-link1:hover {
-    color: $menu-link1-hover;
+    color: $color-menu-link1;
     padding: 10px;
     background-color: #00000031;
     border-radius: 10%;

@@ -35,18 +35,6 @@
                 .imagen-principal {
                     display: flex;
                     width: 90%;
-                    animation-duration: 1s;
-                    animation-name: rebote;
-                    animation-iteration-count: infinite;
-                    animation-direction: alternate;
-                }
-                
-                @keyframes rebote {
-                    from{
-                        margin-top: 20%;
-                    } to {
-                        margin-bottom: 0%;
-                    }
                 }
                 
                 .imagen-principal:hover {
@@ -60,18 +48,6 @@
                     .titutlo-principal {
                         margin-top: 50px;
                         width: 100%; /*430px*/
-                        animation-duration: 1s;
-                        animation-name: rebote1;
-                        animation-iteration-count: infinite;
-                        animation-direction: alternate;
-                    }
-                    
-                    @keyframes rebote1 {
-                        from{
-                            margin-top: 20%;
-                        } to {
-                            margin-bottom: 0%;
-                        }
                     }
                     
                     .titutlo-principal:hover {

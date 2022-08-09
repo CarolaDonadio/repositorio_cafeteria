@@ -35,18 +35,6 @@
 .home .container-padre-home .container-home1 .column-home1 .imagen-principal {
   display: flex;
   width: 90%;
-  animation-duration: 1s;
-  animation-name: rebote;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@keyframes rebote {
-  from {
-    margin-top: 20%;
-  }
-  to {
-    margin-bottom: 0%;
-  }
 }
 .home .container-padre-home .container-home1 .column-home1 .imagen-principal:hover {
   filter: saturate(150%);
@@ -58,18 +46,6 @@
 .home .container-padre-home .container-home1 .column-home1 .main-home .titutlo-principal {
   margin-top: 50px;
   width: 100%; /*430px*/
-  animation-duration: 1s;
-  animation-name: rebote1;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-@keyframes rebote1 {
-  from {
-    margin-top: 20%;
-  }
-  to {
-    margin-bottom: 0%;
-  }
 }
 .home .container-padre-home .container-home1 .column-home1 .main-home .titutlo-principal:hover {
   filter: saturate(200%);
@@ -126,7 +102,7 @@
 }
 
 .menu-link:hover {
-  color: #9e604b;
+  color: #4C1E0E;
   padding: 10px;
   background-color: rgba(221, 229, 223, 0.5803921569);
   border-radius: 10%;
@@ -140,7 +116,7 @@
 }
 
 .menu-link1:hover {
-  color: #b3b3b3;
+  color: #E5DFDD;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.1921568627);
   border-radius: 10%;
