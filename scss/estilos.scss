@@ -96,6 +96,120 @@
 
 @import"_navbar.scss";
 
+/*BIENVENIDOS - INICIO/HOME*/
+.body-bienvenidos {
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #742d11;
+
+    .bienvenidos {
+        /*margin: 200px auto 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        grid-gap: 20px;*/
+        position: relative;
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    
+    .bienvenidos .card {
+        /*position: relative;
+        width:350px;
+        margin: 0 auto;
+        background:#ebebeb;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0,0,0,.5);
+        overflow: hidden;*/
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 420px;
+        margin: 20px;
+        background: #ebebeb;
+        box-shadow: 0 10px 40px rgba(0,0,0,.5);
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    
+    .bienvenidos .card .layer {
+        position: absolute;
+        top:calc(100% - 2px);
+        left:0;
+        width:100%;
+        height: 100%;
+        background: linear-gradient(#a0532f, #632908);
+        z-index: 1;
+        transition: 0.5s;
+    }
+    
+    .bienvenidos .card:hover .layer {
+        top: 0;
+    }
+    
+    .bienvenidos .card .content {
+        position: relative;
+        z-index: 2;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .bienvenidos .card .content .quote {
+        max-width: 48px;
+    }
+    
+    .bienvenidos .card .content p {
+        /*font-size: 18px;
+        line-height: 24px;*/
+        color:#000000;
+        padding: 20px 0;
+    }
+    
+    /*.bienvenidos .card .content .image {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #ffffff;
+        box-shadow: 0 10px 20px rgba(0,0,0,.2);
+    }*/
+    
+    .bienvenidos .card .content .details h2 { 
+        font-size: 18px;
+        color: #000000;
+    }
+    
+    .bienvenidos .card .content .details h2 span {
+        color: #2c85fa;
+        font-size: 14px;
+        transition: 0.5s;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    
+    .bienvenidos .card:hover .content .details h2 span {
+        color: #fff;
+    }
+
+    .bienvenidos .card:hover .content p {
+        color: #fff;
+    }
+}
+
 /*FONDO NOSOTROS*/
 /*sección 1*/
 .container-section1 {
@@ -471,7 +585,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 784px) {
     /*CAMBIOS EN EL INICIO/HOME*/
     .home .container-padre-home .container-home1 {
         display: flex;
@@ -481,9 +595,39 @@
     }
 
     .menu-item {
-        font-size: 85%;
+        font-size: 82%;
     }
 
+    .menu-link:hover { 
+        padding: 0px;
+        background-color: rgba(221, 229, 223, 0);
+    }
+    
+    .menu-link1:hover {
+        padding: 0px;
+        background-color: rgba(221, 229, 223, 0);
+    }
+
+    .home .container-padre-home .container-home1 .column-home1 .subtitulo-principal {
+        margin-top: 50px;
+        font-size: 90%;
+        justify-self: center;
+    }
+}
+
+@media screen and (min-width: 785px) and (max-width: 1023px) {
+    /*CAMBIOS EN EL INICIO/HOME*/
+    .home .container-padre-home .container-home1 {
+        display: flex;
+        margin-top: 87px;
+        padding-left: 15px;
+        margin-bottom: 87px;
+    }
+
+    .menu-item {
+        font-size: 82%;
+    }
+    
     .home .container-padre-home .container-home1 .column-home1 .subtitulo-principal {
         margin-top: 50px;
         font-size: 90%;
@@ -1158,5 +1302,34 @@
 
     .form-label {
         margin-left: -4vw;
+    }
+}
+
+/*MEDIA QUERIES - BIENVENIDOS*/
+@media (max-width: 1050px) {
+    .bienvenidos {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .bienvenidos .card {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 376px) {
+    .body-bienvenidos .bienvenidos .card {
+        width: 270px;
+        height: 370px;
+        margin: 10px;
+    }
+
+    .bienvenidos .card .content p {
+        color: #000000;
+        padding: 20px 0;
+        font-size: 13px;
     }
 }
